@@ -1,0 +1,11 @@
+24K	./.idea
+2.9M	./harmlin
+2.2M	./inputs
+887M	./Results
+0	./TS_Polarisable
+19M	./TS_Static
+22M	./TS_Static_Complete
+85M	./Minimisations_90_100
+64M	./Working_Minimisations
+597M	./Minimisations
+1.7G	.

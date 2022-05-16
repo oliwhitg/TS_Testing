@@ -1,0 +1,19 @@
+#!/bin/csh
+#$ -j y
+#$ -o .
+#$ -l s_rt=700:00:00
+#$ -l h_rt=700:00:00
+#$ -N h_s0_i75_a1000
+
+set fromdir = 
+set todir = 
+setenv WORK /tmp/$USER/$JOB_ID
+
+mkdir -p $WORK
+cd $fromdir
+cp -r * $WORK
+cd $WORK
+./combined_tersoff_3d_lj_D_zmove6000_harm_nodrsav_lin_2021.x
+cp *.dat *.log $fromdir
+cp * $todir
+rm -Rf $WORK
